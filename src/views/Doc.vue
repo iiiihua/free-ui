@@ -28,10 +28,11 @@
 <script lang="ts">
     import Topnav from "../components/Topnav.vue";
     import {inject, Ref} from "vue";
+
     export default {
         name: "Doc.vue",
         components: {Topnav},
-        setup () {
+        setup() {
             const menuVisible = inject<Ref<boolean>>('menuVisibl') //get
             return {menuVisible}
         }
@@ -42,9 +43,11 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
+
         > .nav {
             flex-shrink: 0;
         }
+
         > .content {
             flex-grow: 1;
             padding-top: 60px;
@@ -54,17 +57,21 @@
             }
         }
     }
+
     .content {
         display: flex;
+
         > aside {
             flex-shrink: 0;
         }
+
         > main {
             flex-grow: 1;
             padding: 16px;
             background: lightgreen;
         }
     }
+
     aside {
         background: lightblue;
         padding: 16px;
@@ -73,17 +80,19 @@
         left: 0;
         padding-top: 70px;
         height: 100%;
+
         > h2 {
             margin-bottom: 4px;
         }
+
         > ol {
             > li {
                 padding: 4px 0;
             }
         }
     }
+
     main {
         overflow: auto;
     }
-
 </style>

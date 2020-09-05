@@ -1,12 +1,32 @@
 <template>
     <div>
-
+        Tab示例
     </div>
+    <h1>示例1</h1>
+    <Tabs v-model:selected="x">
+        <Tab title="导航1">内容1</Tab>
+        <Tab title="导航222222222">内容22222222222</Tab>
+    </Tabs>
 </template>
 
-<script>
+<script lang="ts">
+    import Tabs from "../lib/Tabs.vue";
+    import Tab from "../lib/Tab.vue";
+    import {
+        ref
+    } from 'vue'
+
     export default {
-        name: "SwitchDemo"
+        name: "SwitchDemo",
+        components: {
+            Tabs, Tab
+        },
+        setup() {
+            const x = ref('导航1')
+            return {
+                x
+            }
+        }
     }
 </script>
 
