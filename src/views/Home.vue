@@ -2,8 +2,8 @@
     <div>
         <Topnav/>
         <div class="banner">
-            <h1>gulu-ui</h1>
-            <h2>一个厉害的ui框架</h2>
+            <h1>free-ui</h1>
+            <h2>一个自由的ui框架</h2>
             <p class="actions">
                 <a href="https://github.com/iiiihua/year-ui.git">Github</a>
                 <router-link to="/doc">开始</router-link>
@@ -28,8 +28,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: lightgreen;
-
         > .actions {
             padding: 8px 0;
 

@@ -2,7 +2,13 @@
     <div class="topnav">
         <div class="logo">
             <img src="../assets/logo1.png" alt="">
-            <span>ferr-ui</span>
+            <span style="color: purple ">i</span>
+            <span style="color: blue ">u</span>
+            <span style="color: #5cadff ">-</span>
+            <span style="color: chartreuse">e</span>
+            <span style="color: yellow">e</span>
+            <span style="color: orange">r</span>
+            <span style="color: red">f</span>
         </div>
         <ul class="menu">
             <li>菜单1</li>
@@ -35,22 +41,25 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 12;
         justify-content: center;
         align-items: center;
         background-color: #fff;
-        z-index: 12;
+
         > .logo {
             max-width: 10em;
             margin-left: 1em;
             margin-right: auto;
-            > img{
+
+            > img {
                 width: 40%;
             }
+
             > span {
                 float: right;
                 font-size: 2em;
-                color: cyan }
+                color: cyan
+            }
         }
 
         > .menu {

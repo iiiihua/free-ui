@@ -6,22 +6,47 @@
                 <h2>安装&使用</h2>
                 <ol>
                     <li>
-                        <router-link to="">安装</router-link>
+                        <router-link to="/doc/comeindex">安装</router-link>
                     </li>
+                    <br>
+                    <li>
+                        <router-link to="/doc/usefree">使用</router-link>
+                    </li>
+                    <br>
                 </ol>
                 <h2>组件列表</h2>
+                <br>
                 <ol>
+                    <li>
+                        <router-link to="/doc/color">Color色彩</router-link>
+                    </li>
+                    <br>
                     <li>
                         <router-link to="/doc/switch">Switch 组件</router-link>
                     </li>
+                    <br>
                     <li>
                         <router-link to="/doc/button">Button 组件</router-link>
                     </li>
+                    <br>
                     <li>
                         <router-link to="/doc/dialog">Dialog 组件</router-link>
                     </li>
+                    <br>
                     <li>
                         <router-link to="/doc/tabs">Tabs 组件</router-link>
+                    </li>
+                    <br>
+                    <li>
+                        <router-link to="/doc/icon">icon字体图标</router-link>
+                    </li>
+                    <br>
+                    <li>
+                        <router-link to="/doc/linkfont">link文字链接</router-link>
+                    </li>
+                    <br>
+                    <li>
+                        <router-link to="/doc/alert">Alert警告</router-link>
                     </li>
                 </ol>
             </aside>
@@ -34,14 +59,17 @@
 <script lang="ts">
     import Topnav from "../components/Topnav.vue";
     import {inject, Ref} from "vue";
+    import Icon from "../lib/Icon.vue";
 
     export default {
         name: "Doc.vue",
-        components: {Topnav},
+        components: {Icon, Topnav},
         setup() {
             const menuVisible = inject<Ref<boolean>>('menuVisibl') //get
             return {menuVisible}
+
         }
+
     }
 </script>
 <style lang="scss" scoped>
