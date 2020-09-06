@@ -3,6 +3,12 @@
         <Topnav class="nav"/>
         <div class="content">
             <aside v-if="menuVisible">
+                <h2>安装&使用</h2>
+                <ol>
+                    <li>
+                        <router-link to="">安装</router-link>
+                    </li>
+                </ol>
                 <h2>组件列表</h2>
                 <ol>
                     <li>
@@ -50,10 +56,14 @@
 
         > .content {
             flex-grow: 1;
-            padding-top: 60px;
+            padding-top: 80px;
             padding-left: 156px;
             @media (max-width: 500px) {
                 padding-left: 0;
+                aside {
+                    background-color: #fff;
+                    z-index: 11;
+                }
             }
         }
     }
@@ -68,17 +78,15 @@
         > main {
             flex-grow: 1;
             padding: 16px;
-            background: lightgreen;
         }
     }
 
     aside {
-        background: lightblue;
         padding: 16px;
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 70px;
+        padding-top: 100px;
         height: 100%;
 
         > h2 {

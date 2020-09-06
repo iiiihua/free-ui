@@ -8,7 +8,7 @@
             <li>菜单1</li>
             <li>菜单2</li>
         </ul>
-        <span class="toggleAside" @click="toggleMenu"></span>
+        <span class="toggleAside" @click="toggleMenu">|||</span>
     </div>
 </template>
 
@@ -29,7 +29,6 @@
 
 <style lang="scss" scoped>
     .topnav {
-        background: pink;
         display: flex;
         padding: 16px;
         position: fixed;
@@ -39,7 +38,8 @@
         z-index: 10;
         justify-content: center;
         align-items: center;
-
+        background-color: #fff;
+        z-index: 12;
         > .logo {
             max-width: 10em;
             margin-left: 1em;
@@ -66,12 +66,16 @@
         > .toggleAside {
             width: 24px;
             height: 24px;
-            background: red;
             position: absolute;
             left: 16px;
             top: 50%;
             transform: translateY(-50%);
             display: none;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+
         }
 
         @media (max-width: 500px) {
