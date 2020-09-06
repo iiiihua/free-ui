@@ -1,6 +1,9 @@
 <template>
     <div class="topnav">
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="../assets/logo1.png" alt="">
+            <span>ferr-ui</span>
+        </div>
         <ul class="menu">
             <li>菜单1</li>
             <li>菜单2</li>
@@ -38,8 +41,16 @@
         align-items: center;
 
         > .logo {
-            max-width: 6em;
+            max-width: 10em;
+            margin-left: 1em;
             margin-right: auto;
+            > img{
+                width: 40%;
+            }
+            > span {
+                float: right;
+                font-size: 2em;
+                color: cyan }
         }
 
         > .menu {

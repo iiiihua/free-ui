@@ -1,6 +1,4 @@
-<template>
-    <router-view>
-</template>
+<template><router-view/></template>
 
 <script lang="ts">
     import {ref, provide} from 'vue'
