@@ -24,18 +24,18 @@
     </div>
     <h4>主色调</h4>
     <br/>
-    <span>free-ui使用较为安全的蓝色作为主色调其中Light blue常用于hover，Dark blue常用于active</span>
+    <span>free-ui使用明度中等的蓝色作为主色调，适用于友好、安全、稳定的产品，Light Primary常用于hover，Dark Primary常用于click</span>
     <div class="fr-color-all-blue">
         <div class="fr-color-blue">
-            <span>Blue</span><br/>
+            <span>Primary</span><br/>
             <span>#3399ff</span>
         </div>
         <div class="fr-color-light">
-            <span>Light Blue</span><br/>
+            <span>Light Primary</span><br/>
             <span>#5cadff</span>
         </div>
         <div class="fr-color-dark">
-            <span>Dark Blue</span><br/>
+            <span>Dark Primary</span><br/>
             <span>3091f2</span>
         </div>
     </div>

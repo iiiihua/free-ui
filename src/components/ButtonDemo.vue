@@ -1,7 +1,7 @@
 <template>
     <div>
-        Button示例
-        <h1>示例1</h1>
+        <h1>Button按钮</h1>
+        <h2>示例1</h2>
         <div>
             <div>
                 <Button>你好</Button>
@@ -10,7 +10,7 @@
                 <Button theme="text">你好</Button>
             </div>
         </div>
-        <h1>示例2</h1>
+        <h2>示例2</h2>
         <div>
             <Button size="big">大大大</Button>
             <Button>普普通</Button>
