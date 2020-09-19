@@ -3,6 +3,7 @@
     <h3>概述</h3><br>
     <span>在两种状态之间切换的时候用到的开关选择器</span><br><br>
     <h3>代码示例</h3><br>
+    <span>默认样式按钮</span>
     <div class="fr-demo-switch-cg">
         <div class="fr-demo-switch-cg1">
             <Switch v-model:value="bool"/>
@@ -13,6 +14,7 @@
 
     </div>
     <button @click="frSwitchHide" class="fr-demo-switch-hide">{{dmvalue}}</button>
+    <br><br>
     <h3>尺寸</h3><br>
     <span>设置size属性可以更改Switch开关的大小</span>
     <br><br>
@@ -33,39 +35,120 @@
         <div class="fr-demo-switch-cg-dm" ref="frDmidSize">111</div>
     </div>
     <button class="fr-demo-switch-hide" @click="frSwitchHideSize">{{dmvaluesize}}</button>
-
-    <div>
+    <div><br><br>
+        <h3>颜色</h3><br>
         <span>
-            按钮颜色可以更改switchcolor的值，分别为success，warning，error
-        </span><br>
+            按钮颜色提供了背景色的更改，可以更改color的值
+        </span><br><br>
         <div class="fr-demo-switch-color">
             <div class="fr-demo-switch-color1">
                 <div>
-                    <Switch v-model:value="bool5"/>
+                    <Switch color="red" v-model:value="bool5"/>
                 </div>
                 <div>
-                    <Switch switchcolor="success" v-model:value="bool6"/>
+                    <Switch color="yellow" v-model:value="bool6"/>
                 </div>
                 <div>
-                    <Switch switchcolor="warning" v-model:value="bool7"/>
+                    <Switch color="pink" v-model:value="bool7"/>
                 </div>
                 <div>
-                    <Switch switchcolor="error" v-model:value="bool8"/>
+                    <Switch color="black" v-model:value="bool8"/>
+                </div>
+
+            </div>
+            <div class="fr-demo-switch-cg-dm" ref="frDmidColorbgc">111</div>
+        </div>
+    </div>
+    <button class="fr-demo-switch-hide" @click="frSwitchHidecolorbgc">{{dmvaluecolorbgc}}</button>
+    <br><br>
+    <div><br><br>
+        <span>
+            圆形按钮颜色
+        </span><br><br>
+        <div class="fr-demo-switch-color">
+            <div class="fr-demo-switch-color1">
+                <div>
+                    <Switch colors="blue" color="pink" v-model:value="bool9"/>
+                </div>
+                <div>
+                    <Switch colors="red" color="pink" v-model:value="bool10"/>
+                </div>
+                <div>
+                    <Switch colors="yellow" color="pink" v-model:value="bool11"/>
+                </div>
+                <div>
+                    <Switch colors="#5cadff" color="pink" v-model:value="bool12"/>
+                </div>
+
+            </div>
+            <div class="fr-demo-switch-cg-dm" ref="frDmidColorminibgc">111</div>
+        </div>
+    </div>
+    <button class="fr-demo-switch-hide" @click="frSwitchHidecolorminibgc">{{dmvaluecolorminibgc}}</button>
+    <br><br><br>
+    <div>
+        <span>
+            按钮颜色提供了四个常用的功能色系，可以更改switchcolor的值
+        </span><br><br>
+        <div class="fr-demo-switch-color">
+            <div class="fr-demo-switch-color1">
+                <div>
+                    <Switch v-model:value="bool13"/>
+                </div>
+                <div>
+                    <Switch switchcolor="success" v-model:value="bool14"/>
+                </div>
+                <div>
+                    <Switch switchcolor="warning" v-model:value="bool15"/>
+                </div>
+                <div>
+                    <Switch switchcolor="error" v-model:value="bool16"/>
                 </div>
 
             </div>
             <div class="fr-demo-switch-cg-dm" ref="frDmidColor">111</div>
         </div>
-
     </div>
     <button class="fr-demo-switch-hide" @click="frSwitchHidecolor">{{dmvaluecolor}}</button>
     <br><br><br>
-    <h3>API</h3><br><br>
+    <h2>API</h2><br><br>
     <table>
-        <tr><td><h4>参数</h4></td><td><h4>说明</h4></td><td>类型</td></tr>
-        <tr><td>value</td><td>当前状态，可以使用v-model双向绑定数据</td><td>Boolean</td></tr>
-        <tr><td>size</td><td>设置当前开关的大小</td><td>String</td></tr>
-        <tr><td>switchcolor</td><td>设置当前开关的提醒色</td><td>String</td></tr>
+        <tr>
+            <td><h3>参数</h3></td>
+            <td><h3>属性值</h3></td>
+            <td><h3>说明</h3></td>
+            <td><h3>类型</h3></td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>绑定的布尔值</td>
+            <td>当前状态，可以使用v-model双向绑定数据</td>
+            <td>Boolean</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td>large | small</td>
+            <td>设置当前开关的大小</td>
+            <td>String</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>颜色单词或16进制字符串</td>
+            <td>设置当前Switch开关的背景颜色</td>
+            <td>String</td>
+        </tr>
+        <tr>
+            <td>colors</td>
+            <td>颜色单词或16进制字符串</td>
+            <td>设置当前Switch开关的按钮颜色</td>
+            <td>String</td>
+        </tr>
+        <tr>
+            <td>switchcolor</td>
+            <td>success | warning | error</td>
+            <td>设置当前开关的提醒色</td>
+            <td>String</td>
+        </tr>
     </table>
 
 </template>
@@ -84,7 +167,11 @@
                 dmvaluesize: '显示代码',
                 dmvalueBoolSize: true,
                 dmvaluecolor: '显示代码',
-                dmvalueBoolcolor: true
+                dmvalueBoolcolor: true,
+                dmvaluecolorbgc: '显示代码',
+                dmvalueBoolcolorbgc: true,
+                dmvaluecolorminibgc: '显示代码',
+                dmvalueBoolcolorminibgc: true
             }
         },
         setup() {
@@ -97,6 +184,13 @@
             const bool7 = ref(true)
             const bool8 = ref(true)
             const bool9 = ref(true)
+            const bool10 = ref(true)
+            const bool11 = ref(true)
+            const bool12 = ref(true)
+            const bool13 = ref(true)
+            const bool14 = ref(true)
+            const bool15 = ref(true)
+            const bool16 = ref(true)
             return {
                 bool,
                 bool2,
@@ -106,7 +200,14 @@
                 bool6,
                 bool7,
                 bool8,
-                bool9
+                bool9,
+                bool10,
+                bool11,
+                bool12,
+                bool13,
+                bool14,
+                bool15,
+                bool16,
             }
         },
         methods: {
@@ -136,7 +237,7 @@
                 this.dmvalueBoolSize = true
                 this.$refs.frDmidSize.style.borderTop = 'none'
             },
-            frSwitchHidecolor(){
+            frSwitchHidecolor() {
                 if (this.dmvalueBoolcolor === true) {
                     this.$refs.frDmidColor.style.height = '270px'
                     this.$refs.frDmidColor.style.borderTop = '#d7dde4 1px solid'
@@ -148,6 +249,32 @@
                 this.dmvaluecolor = '显示代码'
                 this.dmvalueBoolcolor = true
                 this.$refs.frDmidColor.style.borderTop = 'none'
+            },
+            frSwitchHidecolorbgc() {
+                if (this.dmvalueBoolcolorbgc === true) {
+                    this.$refs.frDmidColorbgc.style.height = '270px'
+                    this.$refs.frDmidColorbgc.style.borderTop = '#d7dde4 1px solid'
+                    this.dmvaluecolorbgc = '隐藏代码'
+                    this.dmvalueBoolcolorbgc = false
+                    return
+                }
+                this.$refs.frDmidColorbgc.style.height = '0px'
+                this.dmvaluecolorbgc = '显示代码'
+                this.dmvalueBoolcolorbgc = true
+                this.$refs.frDmidColorbgc.style.borderTop = 'none'
+            },
+            frSwitchHidecolorminibgc() {
+                if (this.dmvalueBoolcolorminibgc === true) {
+                    this.$refs.frDmidColorminibgc.style.height = '270px'
+                    this.$refs.frDmidColorminibgc.style.borderTop = '#d7dde4 1px solid'
+                    this.dmvaluecolorminibgc = '隐藏代码'
+                    this.dmvalueBoolcolorminibgc = false
+                    return
+                }
+                this.$refs.frDmidColorminibgc.style.height = '0px'
+                this.dmvaluecolorminibgc = '显示代码'
+                this.dmvalueBoolcolorminibgc = true
+                this.$refs.frDmidColorminibgc.style.borderTop = 'none'
             }
 
         }
@@ -204,15 +331,17 @@
         .fr-demo-switch-color1 {
             height: 200px;
             padding: 15px;
+
             div {
                 margin: 10px;
             }
 
         }
     }
-    table{
-        td{
-            padding: 10px 200px 10px 0px;
+
+    table {
+        td {
+            padding: 10px 150px 10px 0px;
         }
     }
 

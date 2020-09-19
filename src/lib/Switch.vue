@@ -1,6 +1,6 @@
 <template>
-    <button class="free-switch" :class="bindClassNameofvalue()":class="getSwitchValueColor()"  :class="getSwitchValueSize()" @click="toggle">
-        <span ref="fr-switch-insize" @click="getSwitchValueSize"></span>
+    <button class="free-switch" :class="bindClassNameofvalue(), getSwitchValueColor(), getSwitchValueSize()" :style="value=== true ? {background:color} : ''" @click="toggle">
+        <span :style="{background:colors}"></span>
     </button>
 </template>
 
@@ -9,8 +9,7 @@
         name: "Switch",
         data (){
             return {
-                clictcolor: '',
-                disabledpd: false
+                clictcolor: ''
             }
         },
         props: {
@@ -20,12 +19,17 @@
             },
             switchcolor:{
                 value: String
+            },
+            color: {
+                value: String
+            },
+            colors: {
+                value: String
             }
         },
         setup(props, context) {
             const toggle = () => {
                 context.emit('update:value', !props.value)
-
             }
             return {toggle}
         },
@@ -73,7 +77,7 @@
             }
 
 
-        },
+        }
 
     }
 </script>

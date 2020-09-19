@@ -1,6 +1,6 @@
 <template>
     <template v-if="visible">
-        <div class="gulu-dialog-overlay" @click="onClickOverLay"></div>
+        <div class="gulu-dialog-overlay" @click="onClickOverLay" ref="ononon"></div>
         <div class="gulu-dialog-wrapper">
             <div class="gulu-dialog">
                 <header>{{tittle}}<span class="gulu-dialog-close" @click="close"></span></header>
@@ -10,7 +10,6 @@
                 <footer>
                     <Button level="main" @click="ok">ok</Button>
                     <Button @click="cancel">cancel</Button>
-
                 </footer>
             </div>
         </div>
