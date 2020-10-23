@@ -1,5 +1,7 @@
 <template>
-<Icon/>
+    <div>
+        <span>Icon图标</span>
+    </div>
 </template>
 
 <script>
