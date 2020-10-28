@@ -1,36 +1,21 @@
 <template>
-    <div>Dialog示例</div>
-    <h1>示例1</h1>
-    <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :ok="f1" :cancel="f2">
-        <div>h1</div>
-        <div>h2</div>
-    </Dialog>
+    <h1>Dialog示例</h1>
+    <Demo :component="Dialog1Demo" />
+    <Demo :component="Dialog2Demo" />
 </template>
-
 <script lang="ts">
-    import {ref} from 'vue'
-    import Dialog from "../lib/Dialog.vue";
-    import Button from "../lib/Button.vue";
-
+    import Demo from './Demo.vue';
+    import Dialog1Demo from './Dialog1.demo.vue';
+    import Dialog2Demo from './Dialog2.demo.vue';
     export default {
-        name: "SwitchDemo",
-        components: {Dialog, Button},
+        components: {
+            Demo
+        },
         setup() {
-            const x = ref(false)
-            const toggle = () => {
-                x.value = !x.value
+            return {
+                Dialog1Demo,
+                Dialog2Demo
             }
-            const f1 = () => {
-                return false
-            }
-            const f2 = () => {
-            }
-            return {x, toggle, f1, f2}
         }
     }
 </script>
-
-<style scoped>
-
-</style>

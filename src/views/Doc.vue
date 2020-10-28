@@ -1,19 +1,20 @@
 <template>
     <div class="layout">
-        <Topnav class="nav"/>
+        <Topnav :toggle-menu-button-visible="true" class="nav"/>
         <div class="content">
             <aside v-if="menuVisible">
-                <h2>安装&使用</h2>
+                <h2>文档</h2>
                 <ol>
                     <li>
-                        <router-link to="/doc/comeindex">安装</router-link>
+                        <router-link to="/doc/intro">介绍</router-link>
+                    </li><li>
+                        <router-link to="/doc/install">安装</router-link>
                     </li>
-                    <br>
                     <li>
-                        <router-link to="/doc/usefree">使用</router-link>
+                        <router-link to="/doc/get-started">开始使用</router-link>
                     </li>
-                    <br>
                 </ol>
+
                 <h2>组件列表</h2>
                 <br>
                 <ol>
@@ -73,6 +74,9 @@
     }
 </script>
 <style lang="scss" scoped>
+    .router-link-active {
+        color: #5cadff;
+    }
     .layout {
         display: flex;
         flex-direction: column;

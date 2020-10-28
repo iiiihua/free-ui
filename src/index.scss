@@ -11,10 +11,7 @@ a{
   text-decoration: none;
   color: inherit;
   &:hover {
-    border-bottom: 1px solid deepskyblue;
-    color: cornflowerblue;
     cursor: pointer;
-    font-size: 23px;
     transition: all 250ms;
    }
 }
@@ -27,6 +24,8 @@ h6 {
   font-weight: normal;
 }
 body {
+  line-height: 1.5;
+  color: #1d2c40;
   font-size: 16px;
   font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica,
   "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB",

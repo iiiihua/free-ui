@@ -1,6 +1,6 @@
 <template>
     <div class="topnav">
-        <div class="logo">
+        <router-link class="logo" to="/">
             <img src="../assets/logo1.png" alt="">
             <span style="color: purple ">i</span>
             <span style="color: blue ">u</span>
@@ -9,12 +9,13 @@
             <span style="color: yellow">e</span>
             <span style="color: orange">r</span>
             <span style="color: red">f</span>
-        </div>
+        </router-link>
         <ul class="menu">
-            <li>菜单1</li>
-            <li>菜单2</li>
+            <router-link to="/doc">文档</router-link>
         </ul>
-        <span class="toggleAside" @click="toggleMenu">|||</span>
+        <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
+            <use xlink:href="#icon-menu"></use>
+        </svg>
     </div>
 </template>
 
@@ -23,6 +24,12 @@
 
     export default {
         name: "Topnav",
+        props: {
+           toggleMenuButtonVisible: {
+               type: Boolean,
+               default: false
+           }
+        },
         setup() {
             const menuVisible = inject<Ref<boolean>>('menuVisibl') //get
             const toggleMenu = () => {
@@ -35,16 +42,16 @@
 
 <style lang="scss" scoped>
     .topnav {
+        color: #007974;
         display: flex;
         padding: 16px;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 12;
+        z-index: 20;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
 
         > .logo {
             max-width: 10em;
@@ -73,14 +80,13 @@
         }
 
         > .toggleAside {
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
             position: absolute;
             left: 16px;
             top: 50%;
             transform: translateY(-50%);
             display: none;
-            font-size: 20px;
             text-align: center;
             cursor: pointer;
             user-select: none;
