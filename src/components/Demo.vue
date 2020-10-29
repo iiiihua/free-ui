@@ -5,9 +5,9 @@
             <component :is="component"/>
         </div>
         <div class="demo-actions">
-            <Button @click="toggleCode">查看代码</Button>
+            <Button @click="test">{{see}}</Button>
         </div>
-        <div class="demo-code" v-if="codeVisible">
+        <div class="demo-code" v-if="seeValue">
             <pre class="language-html" v-html="html"/>
         </div>
 
@@ -32,16 +32,29 @@
         props: {
             component: Object
         },
+        data() {
+            return {
+                seeValue: false,
+                see: '显示代码'
+            };
+        },
+        methods: {
+            test() {
+                if (this.seeValue) {
+                    this.see = '显示代码';
+                    this.seeValue = !this.seeValue;
+                } else {
+                    this.see = '隐藏代码';
+                    this.seeValue = !this.seeValue;
+                }
+            }
+        },
         setup(props) {
             const html = computed(() => {
                 return Prism.highlight(props.component.__sourceCode, Prism.languages.html, 'html');
             });
-            const toggleCode = () => codeVisible.value = !codeVisible.value;
-            const codeVisible = ref(false);
             return {
-                Prism, html,
-                codeVisible,
-                toggleCode
+                Prism, html
             };
         }
     };
