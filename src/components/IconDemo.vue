@@ -3,6 +3,9 @@
         <h1>
             Icon字体图标
         </h1>
+        <br>
+        <h4>为了方便用户使用，icon图标默认不带任何css样式</h4>
+        <Demo :component="Icon1"/>
         <div class="iconPress">
             <ul class="icons">
                 <li class="is-icon"><Icon name="user-outline"/> <span>user-outline</span></li>
@@ -29,7 +32,7 @@
                 <li class="is-icon"><Icon name="folder-add"/> <span>folder-add</span></li>
                 <li class="is-icon"><Icon name="folder-delete"/> <span>folder-delete</span></li>
                 <li class="is-icon"><Icon name="folder-checked"/> <span>folder-checked</span></li>
-                <li class="is-icon"><Icon name="floder-warning"/> <span>floder-warning</span></li>
+                <li class="is-icon"><Icon name="folder-warning"/> <span>floder-warning</span></li>
                 <li class="is-icon"><Icon name="clock-outline"/> <span>clock-outline</span></li>
                 <li class="is-icon"><Icon name="clock"/> <span>clock</span></li>
                 <li class="is-icon"><Icon name="watch"/> <span>watch</span></li>
@@ -41,7 +44,7 @@
                 <li class="is-icon"><Icon name="goods"/> <span>goods</span></li>
                 <li class="is-icon"><Icon name="goods-body"/> <span>goods-body</span></li>
                 <li class="is-icon"><Icon name="phone"/> <span>phone</span></li>
-                <li class="is-icon"><Icon name="iPhone"/> <span>iPhone</span></li>
+                <li class="is-icon"><Icon name="iphone"/> <span>iPhone</span></li>
                 <li class="is-icon"><Icon name="ipad"/> <span>ipad</span></li>
                 <li class="is-icon"><Icon name="view"/> <span>view</span></li>
                 <li class="is-icon"><Icon name="picture"/> <span>picture</span></li>
@@ -51,20 +54,31 @@
                 <li class="is-icon"><Icon name="search"/> <span>search</span></li>
                 <li class="is-icon"><Icon name="goods-outline"/> <span>goods-outline</span></li>
                 <li class="is-icon"><Icon name="goback"/> <span>goback</span></li>
+                <li class="is-icon"><Icon name="more"/> <span>more</span></li>
+                <li class="is-icon"><Icon name="more-outline"/> <span>more-outline</span></li>
+                <li class="is-icon"><Icon name="option"/> <span>option</span></li>
+                <li class="is-icon"><Icon name="reset"/> <span>areset</span></li>
+                <li class="is-icon"><Icon name="tools-outline"/> <span>tools-outline</span></li>
+                <li class="is-icon"><Icon name="tools"/> <span>tools</span></li>
+                <li class="is-icon"><Icon name="mac"/> <span>mac</span></li>
+                <li class="is-icon"><Icon name="setting"/> <span>setting</span></li>
                 <li class="is-icon"><Icon name="apple"/> <span>apple</span></li>
-
             </ul>
-
         </div>
     </div>
 </template>
 
 
-<script>
+<script lang="ts">
     import Icon from "../lib/Icon.vue";
+    import Icon1 from './Icon1.demo.vue'
+    import Demo from './Demo.vue';
     export default {
         name: "IconDemo",
-        components: {Icon}
+        components: {Demo, Icon},
+        data(){
+            return{Icon1}
+        }
     }
 </script>
 
@@ -87,7 +101,6 @@
                 display: block;
                 margin: 5% auto;
                 color: #9ea7b4;
-
             }
         }
     }

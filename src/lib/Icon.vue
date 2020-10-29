@@ -5,8 +5,8 @@
 </template>
 
 
-<script>
-    import '//at.alicdn.com/t/font_2166045_zm5ptim00pb.js'
+<script lang="ts">
+    import '//at.alicdn.com/t/font_2166045_v6qx5n2f8lc.js'
     export default {
         props: {
             name
