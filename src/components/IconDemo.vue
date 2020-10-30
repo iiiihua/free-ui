@@ -96,6 +96,8 @@
             > .g-icon {
                 margin-top: 20%;
                 transform: translateY(-20%);
+                width: 50px;
+                height: 50px;
             }
             > span{
                 display: block;

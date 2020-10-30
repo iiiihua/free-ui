@@ -11,6 +11,7 @@ import AlertDemo from './components/AlertDemo.vue';
 import ColorDemo from './components/ColorDemo.vue';
 import {h} from 'vue';
 import Markdown from './components/Markdown.vue'
+import InputDemo from './components/InputDemo.vue'
 import intro from './markdown/intro.md'
 import getStarted from './markdown/get-started.md'
 import install from './markdown/install.md'
@@ -27,6 +28,7 @@ export const router = createRouter({
                 {path: '/doc/get-started', component: md(getStarted)},
                 {path: '/doc/install', component: md(install)},
                 {path: '/doc/switch', component: SwitchDemo},
+                {path: '/doc/input', component: InputDemo},
                 {path: '/doc/button', component: ButtonDemo},
                 {path: '/doc/dialog', component: DialogDemo},
                 {path: '/doc/tabs', component: TabsDemo},

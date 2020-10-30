@@ -3,23 +3,32 @@
         <Topnav :toggle-menu-button-visible="true" class="nav"/>
         <div class="content">
             <aside v-if="menuVisible">
-                <h2>文档</h2>
+                <h1>文档</h1>
+                <br>
                 <ol>
                     <li>
                         <router-link to="/doc/intro">介绍</router-link>
-                    </li><li>
+                    </li>
+                    <br>
+                    <li>
                         <router-link to="/doc/install">安装</router-link>
                     </li>
+                    <br>
                     <li>
                         <router-link to="/doc/get-started">开始使用</router-link>
                     </li>
                 </ol>
+                <br>
 
-                <h2>组件列表</h2>
+                <h1>组件列表</h1>
                 <br>
                 <ol>
                     <li>
                         <router-link to="/doc/color">Color色彩</router-link>
+                    </li>
+                    <br>
+                    <li>
+                        <router-link to="/doc/icon">icon字体图标</router-link>
                     </li>
                     <br>
                     <li>
@@ -31,15 +40,15 @@
                     </li>
                     <br>
                     <li>
+                        <router-link to="/doc/input">Input 组件</router-link>
+                    </li>
+                    <br>
+                    <li>
                         <router-link to="/doc/dialog">Dialog 组件</router-link>
                     </li>
                     <br>
                     <li>
                         <router-link to="/doc/tabs">Tabs 组件</router-link>
-                    </li>
-                    <br>
-                    <li>
-                        <router-link to="/doc/icon">icon字体图标</router-link>
                     </li>
                     <br>
                     <li>

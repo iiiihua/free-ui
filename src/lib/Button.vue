@@ -1,15 +1,19 @@
 <template>
     <button class="fr-button" :class="classes" :disabled="disabled">
+        <Icon v-if="iconleft" :name="iconleft"/>
         <span v-if="loading" class="fr-loadingIndicator"></span>
         <slot/>
+        <Icon v-if="iconright" :name="iconright"/>
     </button>
 </template>
 
 <script>
     import {computed} from 'vue'
+    import Icon from "./Icon.vue";
 
     export default {
         name: "Button",
+        components: {Icon},
         props: {
             theme: {
                 type: String,
@@ -30,6 +34,14 @@
             loading: {
                 type: Boolean,
                 default: false
+            },
+            iconleft:{
+                type: String,
+                default: ''
+            },
+            iconright:{
+                type: String,
+                default: ''
             }
         },
         setup(props) {
