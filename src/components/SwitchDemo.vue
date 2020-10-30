@@ -7,6 +7,7 @@
         <Demo :component="Switch5Demo"/>
         <Demo :component="Switch6Demo"/>
         <Demo :component="Switch4Demo"/>
+        <BottmoTouch go="/doc/button" goback="/doc/icon" gotext="Button组件" gobacktext="Icon字体图标"/>
     </div>
 </template>
 <script lang="ts">
@@ -17,8 +18,10 @@
     import Switch5Demo from './Switch5.demo.vue';
     import Switch6Demo from './Switch6.demo.vue';
     import Demo from './Demo.vue';
+    import BottmoTouch from './BottmoTouch.vue';
     export default {
         components: {
+            BottmoTouch,
             Demo
         },
         setup() {

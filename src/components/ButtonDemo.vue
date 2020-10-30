@@ -6,6 +6,7 @@
         <Demo :component="Button3Demo" />
         <Demo :component="Button4Demo" />
         <Demo :component="Button5Demo" />
+        <BottmoTouch go="/doc/input" goback="/doc/switch" gotext="Input组件" gobacktext="Switch组件"/>
     </div>
 </template>
 <script lang="ts">
@@ -15,6 +16,7 @@
     import Button3Demo from "./Button3.demo.vue";
     import Button4Demo from "./Button4.demo.vue";
     import Button5Demo from "./Button5.demo.vue";
+    import BottmoTouch from './BottmoTouch.vue';
     export default {
         components: {
             Demo
@@ -25,7 +27,8 @@
                 Button2Demo,
                 Button3Demo,
                 Button4Demo,
-                Button5Demo
+                Button5Demo,
+                BottmoTouch
             };
         },
     };

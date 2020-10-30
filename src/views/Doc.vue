@@ -97,7 +97,6 @@
 
         > .content {
             flex-grow: 1;
-            padding-top: 80px;
             padding-left: 156px;
             @media (max-width: 500px) {
                 padding-left: 0;

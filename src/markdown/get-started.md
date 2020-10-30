@@ -20,9 +20,10 @@ import {Button, Tabs, Switch, Dialog} from "king-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "king-ui"
+import {Button, Tabs, Switch, Dialog} from "free-ui"
 export default {
   components: {Button}
 }
 </script>
 ```
+准备好了吗？[走起](#/doc/color)

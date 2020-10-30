@@ -95,14 +95,17 @@
                 <span>#f5f7f9</span>
             </div>
         </div>
+        <BottmoTouch go="/doc/icon" goback="/doc/get-started" gotext="Icon字体图标" gobacktext="开始使用"/>
     </div>
 
 
 </template>
 
 <script>
+    import BottmoTouch from "./BottmoTouch.vue";
     export default {
-        name: "ColorDemo"
+        name: "ColorDemo",
+        components: {BottmoTouch}
     }
 </script>
 

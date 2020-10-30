@@ -65,6 +65,7 @@
                 <li class="is-icon"><Icon name="apple"/> <span>apple</span></li>
             </ul>
         </div>
+        <BottmoTouch go="/doc/switch" goback="/doc/color" gotext="Switch组件" gobacktext="Color色彩"/>
     </div>
 </template>
 
@@ -73,9 +74,10 @@
     import Icon from "../lib/Icon.vue";
     import Icon1 from './Icon1.demo.vue'
     import Demo from './Demo.vue';
+    import BottmoTouch from './BottmoTouch.vue';
     export default {
         name: "IconDemo",
-        components: {Demo, Icon},
+        components: {BottmoTouch, Demo, Icon},
         data(){
             return{Icon1}
         }
@@ -84,12 +86,13 @@
 
 <style scoped lang="scss">
     .iconPress{
-        width: 90%;
+        width: 92.59%;
+        height: 200em;
     }
     .icons{
         display: grid;
         grid-template-columns: repeat(6, 18%);
-        grid-template-rows: repeat(8, 15%);
+        grid-template-rows: repeat(13, 13%);
         > .is-icon{
             border: 1px #d7dde4 dotted;
             text-align: center;

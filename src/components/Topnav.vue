@@ -45,21 +45,20 @@
         color: #007974;
         display: flex;
         padding: 16px;
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: relative;
+        height: 8em;
         width: 100%;
         z-index: 20;
         justify-content: center;
         align-items: center;
 
         > .logo {
-            max-width: 10em;
-            margin-left: 1em;
+            max-width: 9em;
+            margin-left: em;
             margin-right: auto;
 
             > img {
-                width: 40%;
+                width: 30%;
             }
 
             > span {

@@ -57,7 +57,7 @@
 
     .features {
         margin: 64px auto;
-        padding: 0 27px;
+        padding: 0 47px;
         @media (min-width: 800px) {
             width: 800px;
             >ul {
@@ -80,7 +80,6 @@
             flex-wrap: wrap;
 
             > li {
-                width: 400px;
                 margin: 16px 0;
                 display: grid;
                 justify-content: start;
