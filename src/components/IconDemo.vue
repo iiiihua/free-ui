@@ -87,12 +87,11 @@
 <style scoped lang="scss">
     .iconPress{
         width: 92.59%;
-        height: 200em;
     }
     .icons{
         display: grid;
         grid-template-columns: repeat(6, 18%);
-        grid-template-rows: repeat(13, 13%);
+        grid-template-rows: repeat(13, 9em);
         > .is-icon{
             border: 1px #d7dde4 dotted;
             text-align: center;

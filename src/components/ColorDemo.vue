@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="free-color">
         <h2>Color色彩</h2>
         <br/>
         <h3>概述</h3>
@@ -110,20 +110,17 @@
 </script>
 
 <style lang="scss" scoped>
+    .free-color{
+        width: 100%;
+    }
 
     span {
         font-size: 15px;
     }
-
-    .fr-color-all-basics {
-        width: 100%;
-        height: 80px;
-    }
-
     .fr-color-basics-black {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: #000000;
         color: #fff;
@@ -137,9 +134,9 @@
     }
 
     .fr-color-basics-white {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: #ffffff;
         color: #464c5b;
@@ -154,9 +151,9 @@
     }
 
     .fr-color-basics-transparent {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: transparent;
         color: #464c5b;
@@ -169,16 +166,10 @@
             font-size: 17px;
         }
     }
-
-    .fr-color-all-blue {
-        width: 100%;
-        height: 80px;
-    }
-
     .fr-color-blue {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: #3399ff;
         color: #fff;
@@ -193,9 +184,9 @@
     }
 
     .fr-color-light {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: #5cadff;
         color: #fff;
@@ -209,9 +200,9 @@
     }
 
     .fr-color-dark {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 27%;
+        width: 32.7%;
         height: 70px;
         background-color: #3091f2;
         color: #fff;
@@ -230,9 +221,9 @@
     }
 
     .fr-color-info {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #3399ff;
         color: #fff;
@@ -246,9 +237,9 @@
     }
 
     .fr-color-success {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #00cc66;
         color: #fff;
@@ -263,9 +254,9 @@
     }
 
     .fr-color-warning {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #ff9900;
         color: #fff;
@@ -279,9 +270,9 @@
     }
 
     .fr-color-error {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #ff6600;
         color: #fff;
@@ -300,9 +291,9 @@
     }
 
     .fr-color-title {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #464c5b;
         color: #fff;
@@ -316,9 +307,9 @@
     }
 
     .fr-color-content {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #657180;
         color: #fff;
@@ -332,9 +323,9 @@
     }
 
     .fr-color-subcolor {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #9ea7b4;
         color: #fff;
@@ -348,9 +339,9 @@
     }
 
     .fr-color-disabled {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #c3cbd6;
         color: #fff;
@@ -364,9 +355,9 @@
     }
 
     .fr-color-border {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #d7dde4;
         color: #464c5b;
@@ -380,9 +371,9 @@
     }
 
     .fr-color-divider {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #e3e8ee;
         color: #464c5b;
@@ -396,9 +387,9 @@
     }
 
     .fr-color-bgc {
-        margin: 5px;
+        margin: 0.3%;
         float: left;
-        width: 20%;
+        width: 24.4%;
         height: 70px;
         background-color: #f5f7f9;
         color: #464c5b;
