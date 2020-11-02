@@ -55,10 +55,7 @@
                         <li>
                             <router-link to="/doc/linkfont">link文字链接</router-link>
                         </li>
-                        <br>
-                        <li>
-                            <router-link to="/doc/alert">Alert警告</router-link>
-                        </li>
+
                     </ol>
                 </div>
             </aside>

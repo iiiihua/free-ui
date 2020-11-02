@@ -2,7 +2,7 @@
     <Demo :component="LinkFount1"/>
     <Demo :component="LinkFount2"/>
     <Demo :component="LinkFount3"/>
-    <BottmoTouch go="/doc/alert" goback="/doc/tabs" gotext="Alert警告" gobacktext="Tabs组件"/>
+    <BottmoTouch go="" goback="/doc/tabs" gotext="待开发..." gobacktext="Tabs组件"/>
 </template>
 
 <script lang="ts" >
