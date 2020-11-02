@@ -13,7 +13,7 @@
     }
 </script>
 
-<style>
+<style lang="scss">
     .g-icon {
         width: 1em;
         height: 1em;
