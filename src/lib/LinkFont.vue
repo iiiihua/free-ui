@@ -29,9 +29,6 @@
             underline: {
                 type: Boolean || String
             }
-        },
-        setup(props) {
-            console.log(props);
         }
     };
 </script>
