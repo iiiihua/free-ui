@@ -1,6 +1,6 @@
 {
-  "name": "free-ui",
-  "version": "0.0.1",
+  "name": "free-user-interface",
+  "version": "0.0.4",
   "files": ["dist/lib/*"],
   "main": "dist/lib/free.js",
   "scripts": {

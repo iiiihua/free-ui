@@ -10,7 +10,7 @@ export default {
         globals: {
             vue: 'Vue'
         },
-        name: 'Free',
+        name: 'free-ui',
         file: 'dist/lib/free.js',
         format: 'umd',
         plugins: [terser()]

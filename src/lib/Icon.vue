@@ -6,6 +6,7 @@
 
 
 <script lang="ts">
+    import './svg.ts'
     export default {
         props: {
             name
