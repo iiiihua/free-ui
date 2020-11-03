@@ -3,26 +3,31 @@
 
 然后在你的代码中写入下面的代码
 
+```js
+import {Icon,Switch,Input,Dialog,Tabs,Tab,LinkFont,openDialog} from 'free-user-interface'
+import 'free-user-interface/dist/lib/free.css'
 ```
-import {Button, Tabs, Switch, Dialog} from "king-ui"
+或 按需导入所需要使用的组件 
+```js
+import {Icon} from 'free-user-interface'
+import 'free-user-interface/dist/lib/free.css'
 ```
-
-就可以使用我提供的组件了。
-
+⚠️注意：在官网的案例中采用了相对路径的导入方式，您需要改为包导入方式
 ## Vue 单文件组件
 
 代码示例：
 
-```
+```html
 <template>
   <div>
     <Button>按钮</Button>
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "free-ui"
+import {Icon,Switch,Input,Dialog,Tabs,Tab,LinkFont,openDialog} from 'free-user-interface'
+import 'free-user-interface/dist/lib/free.css'
 export default {
-  components: {Button}
+  components: {Icon,Switch,Input,Dialog,Tabs,Tab,LinkFont}
 }
 </script>
 ```
